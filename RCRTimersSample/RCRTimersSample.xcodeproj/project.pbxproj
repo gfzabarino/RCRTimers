@@ -14,6 +14,10 @@
 		673FAB7419C0B94B00DFD053 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 673FAB7319C0B94B00DFD053 /* Images.xcassets */; };
 		673FAB7719C0B94B00DFD053 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673FAB7519C0B94B00DFD053 /* LaunchScreen.xib */; };
 		673FAB8319C0B94B00DFD053 /* RCRTimersSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 673FAB8219C0B94B00DFD053 /* RCRTimersSampleTests.m */; };
+		675265A719C441FA00C2B002 /* RCRHourChangeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 675265A019C441FA00C2B002 /* RCRHourChangeTimer.m */; };
+		675265A819C441FA00C2B002 /* RCRMinuteChangeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 675265A219C441FA00C2B002 /* RCRMinuteChangeTimer.m */; };
+		675265A919C441FA00C2B002 /* RCRSecondChangeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 675265A419C441FA00C2B002 /* RCRSecondChangeTimer.m */; };
+		675265AA19C441FA00C2B002 /* RCRTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 675265A619C441FA00C2B002 /* RCRTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		673FAB7C19C0B94B00DFD053 /* RCRTimersSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCRTimersSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		673FAB8119C0B94B00DFD053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		673FAB8219C0B94B00DFD053 /* RCRTimersSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCRTimersSampleTests.m; sourceTree = "<group>"; };
+		6752659F19C441FA00C2B002 /* RCRHourChangeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRHourChangeTimer.h; sourceTree = "<group>"; };
+		675265A019C441FA00C2B002 /* RCRHourChangeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRHourChangeTimer.m; sourceTree = "<group>"; };
+		675265A119C441FA00C2B002 /* RCRMinuteChangeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRMinuteChangeTimer.h; sourceTree = "<group>"; };
+		675265A219C441FA00C2B002 /* RCRMinuteChangeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRMinuteChangeTimer.m; sourceTree = "<group>"; };
+		675265A319C441FA00C2B002 /* RCRSecondChangeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRSecondChangeTimer.h; sourceTree = "<group>"; };
+		675265A419C441FA00C2B002 /* RCRSecondChangeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRSecondChangeTimer.m; sourceTree = "<group>"; };
+		675265A519C441FA00C2B002 /* RCRTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRTimer.h; sourceTree = "<group>"; };
+		675265A619C441FA00C2B002 /* RCRTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,7 @@
 		673FAB5A19C0B94B00DFD053 = {
 			isa = PBXGroup;
 			children = (
+				6752659E19C441FA00C2B002 /* RCRTimers */,
 				673FAB6519C0B94B00DFD053 /* RCRTimersSample */,
 				673FAB7F19C0B94B00DFD053 /* RCRTimersSampleTests */,
 				673FAB6419C0B94B00DFD053 /* Products */,
@@ -117,6 +130,22 @@
 				673FAB8119C0B94B00DFD053 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6752659E19C441FA00C2B002 /* RCRTimers */ = {
+			isa = PBXGroup;
+			children = (
+				6752659F19C441FA00C2B002 /* RCRHourChangeTimer.h */,
+				675265A019C441FA00C2B002 /* RCRHourChangeTimer.m */,
+				675265A119C441FA00C2B002 /* RCRMinuteChangeTimer.h */,
+				675265A219C441FA00C2B002 /* RCRMinuteChangeTimer.m */,
+				675265A319C441FA00C2B002 /* RCRSecondChangeTimer.h */,
+				675265A419C441FA00C2B002 /* RCRSecondChangeTimer.m */,
+				675265A519C441FA00C2B002 /* RCRTimer.h */,
+				675265A619C441FA00C2B002 /* RCRTimer.m */,
+			);
+			name = RCRTimers;
+			path = ../RCRTimers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				673FAB6F19C0B94B00DFD053 /* ViewController.m in Sources */,
+				675265A819C441FA00C2B002 /* RCRMinuteChangeTimer.m in Sources */,
 				673FAB6C19C0B94B00DFD053 /* AppDelegate.m in Sources */,
 				673FAB6919C0B94B00DFD053 /* main.m in Sources */,
+				675265A719C441FA00C2B002 /* RCRHourChangeTimer.m in Sources */,
+				675265AA19C441FA00C2B002 /* RCRTimer.m in Sources */,
+				675265A919C441FA00C2B002 /* RCRSecondChangeTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,6 +447,7 @@
 				673FAB8819C0B94B00DFD053 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		673FAB8919C0B94B00DFD053 /* Build configuration list for PBXNativeTarget "RCRTimersSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +456,7 @@
 				673FAB8B19C0B94B00DFD053 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
