@@ -45,7 +45,15 @@ self.minuteChangeTimer = [RCRMinuteChangeTimer timerWithBlock:^(NSDate *firingDa
 }];
 ```
 
-In this case we’re simply logging a message using `NSLog()`.
+In this case we’re simply logging a message using `NSLog()`, which will be output to the console every time the minute ticks over.
+
+In order to stop a timer, preventing it from executing the block any further, call the `stop` method as follows:
+
+```objc
+[self.minuteChangeTimer stop];
+```
+
+Note that a stopped timer cannot be restarted. Instead, a new timer should be created instead to achieve the same effect.
 
 Further examples and full documentation comments can be found in the sample project.
 
