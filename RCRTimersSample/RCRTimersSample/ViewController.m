@@ -38,15 +38,15 @@
     // Setup our timers to log some text, using some very basic indendation so that each one stands out a little:
     
     self.secondChangeTimer = [RCRSecondChangeTimer timerWithBlock:^(NSDate *firingDate) {
-        [self logText:[NSString stringWithFormat:@"       - RCRSecondChangeTimer firing"]];
+        [self logText:@"       - RCRSecondChangeTimer firing"];
     }];
     
     self.minuteChangeTimer = [RCRMinuteChangeTimer timerWithBlock:^(NSDate *firingDate) {
-        [self logText:[NSString stringWithFormat:@"   - RCRMinuteChangeTimer firing"]];
+        [self logText:@"   - RCRMinuteChangeTimer firing"];
     }];
     
     self.hourChangeTimer = [RCRHourChangeTimer timerWithBlock:^(NSDate *firingDate) {
-        [self logText:[NSString stringWithFormat:@"RCRHourChangeTimer firing"]];
+        [self logText:@"RCRHourChangeTimer firing"];
     }];
 }
 
