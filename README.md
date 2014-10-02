@@ -61,6 +61,10 @@ Further examples and full documentation comments can be found in the sample proj
 
 A sample project containing several examples of timers can be found in the `RCRTimersSample` folder.
 
+## API Docs
+
+The [latest API documentation](http://cocoadocs.org/docsets/RCRTimers/) can be found on CocoaDocs.
+
 ## License
 
 MIT License (see `LICENSE` in the root of the repository).
