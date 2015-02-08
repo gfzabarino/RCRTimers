@@ -7,7 +7,7 @@ Note that timers only execute while your app is running in the foreground.
 
 ## What it Depends on
 
-`RCRTimers` depends on Xcode 6 and higher and has been tested with iOS 7 and iOS 8.
+`RCRTimers` has been verified as working with Xcode 6.1, iOS 7.1 and iOS 8.1.
 
 All code uses ARC.
 
