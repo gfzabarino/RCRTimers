@@ -18,7 +18,7 @@
     
     NSDate *nowPlusOneSecond = [calendar dateByAddingComponents:oneSecondComponents toDate:now options:0];
     
-    NSDateComponents *nowPlusOneSecondComponents = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit) fromDate:nowPlusOneSecond];
+    NSDateComponents *nowPlusOneSecondComponents = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond) fromDate:nowPlusOneSecond];
 
     // We don't need to perform any additional work on the components (as we lose anything less than a second anyway, see below)
     

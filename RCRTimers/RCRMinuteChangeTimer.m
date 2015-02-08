@@ -18,7 +18,7 @@
     
     NSDate *nowPlusOneMinute = [calendar dateByAddingComponents:oneMinuteComponents toDate:now options:0];
     
-    NSDateComponents *nowPlusOneMinuteComponents = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit) fromDate:nowPlusOneMinute];
+    NSDateComponents *nowPlusOneMinuteComponents = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond) fromDate:nowPlusOneMinute];
     
     nowPlusOneMinuteComponents.second = 0; // Set the second component to be zero, for the start of the next minute
     
