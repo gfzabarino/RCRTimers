@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author           = "Rich Robinson"
   s.source           = { :git => "https://github.com/robinsonrc/RCRTimers.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.1'
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = ['RCRTimers/*.{h,m}']
